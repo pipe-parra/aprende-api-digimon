@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,9 +15,12 @@ import { DigimonesServices } from './digimones/digimones.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
+  ],
+  providers: [ 
+    DigimonesServices,
    
   ],
-  providers: [ DigimonesServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

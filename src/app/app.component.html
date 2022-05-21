@@ -1,2 +1,20 @@
-<h1>Hola</h1>
-<button class="btn btn-danger">Danger</button>
+<h1>Ejercicio para llamar un API en Angular</h1>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-3" *ngFor="let digimon of digimones">
+
+<div class="card" style="width: 18rem;">
+    <img src="{{digimon.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{digimon.name}</h5>
+      <p class="card-text">{{digimon.level}}</p>
+      <a href="#" class="btn btn-primary">Ir al API</a>
+    </div>
+  </div>
+
+
+</div>  
+</div>
+</div>
+
