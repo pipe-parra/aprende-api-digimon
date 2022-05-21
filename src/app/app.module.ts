@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DigimonesComponent } from './digimones/digimones.component';
+import { DigimonesServices } from './digimones/digimones.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,10 @@ import { DigimonesComponent } from './digimones/digimones.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
-  providers: [],
+  providers: [ DigimonesServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
